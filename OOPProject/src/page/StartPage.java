@@ -10,6 +10,6 @@ public class StartPage {
 		create = new Create();
 		create.getstartPanel().add(create.getstartButton());
 		create.getstartPanel().add(create.getcreditButton());	
-		create.getFrame().setContentPane(create.getstartButton());
+		create.getFrame().setContentPane(create.getstartPanel());
 	}
 }
