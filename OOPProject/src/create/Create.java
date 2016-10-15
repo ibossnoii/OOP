@@ -12,7 +12,23 @@ public class Create {
 	
 	private final int gamewidth = 400, gamehight = 400;
 	
-	public Create() {
+	public void CreateButton() {
+		//create button
+		startbutton = new JButton("Start");
+		creditbutton = new JButton("Credit");
+		backbutton = new JButton("Back");
+		startbutton.setBounds(150, 150, 80, 50);
+		creditbutton.setBounds(150, 150, 80, 50);
+		backbutton.setBounds(150, 150, 80, 50);
+	}
+	public void CreatePanel() {
+		//create panel
+		startpanel = new JPanel();
+		homepanel = new JPanel();
+		creditpanel = new JPanel();
+	}
+	
+	public void CreateFrame() {
 		//create frame
 		frame = new JFrame();
 		frame.setTitle("BuddyPet");
@@ -23,21 +39,6 @@ public class Create {
 		frame.setLocationRelativeTo(null);
 		
 		frame.setVisible(true);
-		
-		//create panel
-		startpanel = new JPanel();
-		homepanel = new JPanel();
-		creditpanel = new JPanel();
-		
-		//create button
-		startbutton = new JButton("Start");
-		creditbutton = new JButton("Credit");
-		backbutton = new JButton("Back");
-		startbutton.setBounds(150, 150, 80, 50);
-		creditbutton.setBounds(150, 150, 80, 50);
-		backbutton.setBounds(150, 150, 80, 50);
-		
-		
 	}
 	
 	public JFrame getFrame(){
